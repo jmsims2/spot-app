@@ -1,45 +1,33 @@
 import React, {useState} from 'react';
-import {StyleSheet} from 'react-native';
 import {
-  ViroARScene,
-  ViroText,
-  ViroConstants,
-  ViroARSceneNavigator,
-} from '@viro-community/react-viro';
-
-const HelloWorldSceneAR = () => {
-  const [text, setText] = useState('Initializing AR...');
-
-  function onInitialized(state, reason) {
-    console.log('guncelleme', state, reason);
-    if (state === ViroConstants.TRACKING_NORMAL) {
-      setText('Hello World!');
-    } else if (state === ViroConstants.TRACKING_NONE) {
-      // Handle loss of tracking
-    }
-  }
-
-  return (
-    <ViroARScene onTrackingUpdated={onInitialized}>
-      <ViroText
-        text={text}
-        scale={[0.5, 0.5, 0.5]}
-        position={[0, 0, -1]}
-        style={styles.helloWorldTextStyle}
-      />
-    </ViroARScene>
-  );
-};
+  StyleSheet,
+  View,
+  Text,
+  TouchableOpacity,
+  Image,
+  Button,
+  TouchableWithoutFeedback,
+} from 'react-native';
+import {ViroText, ViroARSceneNavigator} from '@viro-community/react-viro';
+import BottomSheet from 'reanimated-bottom-sheet';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {SpotSceneAR} from './src/screens/SpotView';
+import {SpotControls} from './src/screens/SpotControls';
 
 export default () => {
   return (
-    <ViroARSceneNavigator
-      autofocus={true}
-      initialScene={{
-        scene: HelloWorldSceneAR,
-      }}
-      style={styles.f1}
-    />
+    <>
+      <ViroARSceneNavigator
+        autofocus={true}
+        initialScene={{
+          scene: SpotSceneAR,
+        }}
+        style={styles.f1}
+      />
+      <GestureHandlerRootView>
+        <SpotControls />
+      </GestureHandlerRootView>
+    </>
   );
 };
 

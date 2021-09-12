@@ -7,24 +7,34 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "type-check": "npm tsc"
   },
   "dependencies": {
     "@viro-community/react-viro": "^2.20.2",
     "fsevents": "^2.3.2",
     "react": "17.0.2",
-    "react-native": "0.65.1"
+    "react-native": "0.65.1",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-reanimated": "^2.2.0",
+    "react-query": "^3.23.2",
+    "reanimated-bottom-sheet": "^1.0.0-alpha.22"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/runtime": "^7.15.3",
     "@react-native-community/eslint-config": "^3.0.0",
+    "@types/jest": "^27.0.1",
+    "@types/react": "^17.0.20",
+    "@types/react-native": "^0.65.0",
+    "@types/react-test-renderer": "^17.0.1",
     "babel-jest": "^27.0.6",
     "eslint": "^7.32.0",
     "jest": "^27.0.6",
     "metro-react-native-babel-preset": "^0.66.2",
     "react-native-codegen": "^0.0.7",
-    "react-test-renderer": "17.0.2"
+    "react-test-renderer": "17.0.2",
+    "typescript": "^4.4.3"
   },
   "jest": {
     "preset": "react-native"
