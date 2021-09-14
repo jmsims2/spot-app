@@ -7,9 +7,11 @@ import {
   StyleSheet,
 } from 'react-native';
 import BottomSheet from 'reanimated-bottom-sheet';
+import { GeolocationData } from '../hooks/useGeolocation';
 
 type SpotFooterProps = {
   sheetRef: BottomSheet;
+  position: GeolocationData;
 };
 
 const styles = StyleSheet.create({
@@ -47,11 +49,11 @@ const styles = StyleSheet.create({
     color: 'white',
     fontStyle: 'italic',
     fontWeight: 'bold',
-    fontSize: 12,
+    fontSize: 10,
   },
 });
 
-export const SpotFooter = ({ sheetRef }) => (
+export const SpotFooter = ({ sheetRef, position }) => (
   <View style={styles.container}>
     <View style={styles.avatarContainer}>
       <Image
@@ -71,8 +73,12 @@ export const SpotFooter = ({ sheetRef }) => (
     </View>
 
     <View style={styles.coordinatesContainer}>
-      <Text style={styles.coordinatesText}>33.051293°N</Text>
-      <Text style={styles.coordinatesText}>96.790247°W</Text>
+      <Text style={styles.coordinatesText}>{`${position.latitude.toFixed(6)}°${
+        position.latitude > 0 ? 'N' : 'S'
+      }`}</Text>
+      <Text style={styles.coordinatesText}>{`${position.longitude.toFixed(6)}°${
+        position.longitude > 0 ? 'E' : 'W'
+      }`}</Text>
     </View>
   </View>
 );
