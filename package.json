@@ -13,7 +13,6 @@
   "dependencies": {
     "@react-native-community/geolocation": "^2.0.2",
     "@viro-community/react-viro": "^2.20.2",
-    "fsevents": "^2.3.2",
     "react": "17.0.2",
     "react-native": "0.65.1",
     "react-native-gesture-handler": "^1.10.3",
