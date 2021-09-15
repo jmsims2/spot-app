@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { ViroARSceneNavigator } from '@viro-community/react-viro';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { SpotSceneAR } from './src/screens/SpotView';
+import { SpotSceneAR } from './src/screens/SpotSceneAr';
 import { SpotControls } from './src/screens/SpotControls';
 
 export default () => {
@@ -10,6 +10,7 @@ export default () => {
     <>
       <ViroARSceneNavigator
         autofocus={true}
+        worldAlignment="GravityAndHeading"
         initialScene={{
           scene: SpotSceneAR,
         }}
