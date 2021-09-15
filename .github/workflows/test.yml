@@ -6,7 +6,7 @@ name: Unit Test
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
@@ -26,8 +26,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install
-        run: npm install
-        
+        run: node --version && npm install
+
       # Runs a single command using the runners shell
       - name: Test
         run: npm test

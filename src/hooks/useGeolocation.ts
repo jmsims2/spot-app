@@ -39,6 +39,7 @@ export function useGeolocation() {
         dispatch({ type: 'SET_POSITION', payload: p.coords });
       },
       e => dispatch({ type: 'SET_ERROR', payload: e.message }),
+      { useSignificantChanges: true },
     );
 
     return () => Geolocation.clearWatch(watchId);
