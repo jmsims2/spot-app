@@ -63,7 +63,9 @@ export const SpotFooter = ({ sheetRef, position }) => (
       />
     </View>
     <View style={styles.buttonContainer}>
-      <TouchableWithoutFeedback onPress={() => sheetRef.current.snapTo(0)}>
+      <TouchableWithoutFeedback
+        testID="add-spot"
+        onPress={() => sheetRef.current.snapTo(0)}>
         <Image
           style={styles.buttonImage}
           resizeMode="contain"
