@@ -8,7 +8,9 @@ type AddSpotFormProps = {
 
 export const AddSpotForm = ({ sheetRef }) => {
   return (
-    <View style={{ height: 700, backgroundColor: 'black' }}>
+    <View
+      testID="add-spot-form"
+      style={{ height: 700, backgroundColor: 'black' }}>
       <Text style={{ color: 'white' }}>Add Spot Form Here</Text>
       <Button title="Save" onPress={() => sheetRef.current.snapTo(1)}>
         <Text style={{ color: 'white' }}>Save</Text>
