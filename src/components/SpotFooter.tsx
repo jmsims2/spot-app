@@ -10,7 +10,7 @@ import BottomSheet from 'reanimated-bottom-sheet';
 import { GeolocationData } from '../hooks/useGeolocation';
 
 type SpotFooterProps = {
-  sheetRef: BottomSheet;
+  sheetRef: React.RefObject<BottomSheet>;
   position: GeolocationData;
 };
 
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export const SpotFooter = ({ sheetRef, position }) => (
+export const SpotFooter = ({ sheetRef, position }: SpotFooterProps) => (
   <View style={styles.container}>
     <View style={styles.avatarContainer}>
       <Image
@@ -65,7 +65,7 @@ export const SpotFooter = ({ sheetRef, position }) => (
     <View style={styles.buttonContainer}>
       <TouchableWithoutFeedback
         testID="add-spot"
-        onPress={() => sheetRef.current.snapTo(0)}>
+        onPress={() => sheetRef?.current?.snapTo(0)}>
         <Image
           style={styles.buttonImage}
           resizeMode="contain"
