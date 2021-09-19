@@ -1,3 +1,8 @@
+import mockAsyncStorage from '@react-native-community/async-storage/jest/async-storage-mock';
+import 'react-native-url-polyfill';
+
+jest.mock('@react-native-community/async-storage', () => mockAsyncStorage);
+
 // @ts-ignore
 global.__reanimatedWorkletInit = jest.fn();
 

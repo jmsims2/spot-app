@@ -4,6 +4,7 @@ module.exports = {
   setupFilesAfterEnv: [
     '@testing-library/jest-native/extend-expect',
     './jest.setup.js',
+    './msw.setup.ts',
   ],
   transformIgnorePatterns: ['node_modules/(?!react-native|@react-native)/'],
 };

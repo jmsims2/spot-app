@@ -15,7 +15,9 @@ export const SpotControls = () => {
   const sheetRef = React.useRef<BottomSheet>(null);
   const { error, position } = useGeolocation();
 
-  const renderContent = () => <AddSpotForm sheetRef={sheetRef} />;
+  const renderContent = () => (
+    <AddSpotForm sheetRef={sheetRef} position={position} />
+  );
 
   return (
     <>
