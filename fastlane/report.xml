@@ -5,39 +5,54 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying fastlane version" time="0.000802">
+      <testcase classname="fastlane.lanes" name="0: Verifying fastlane version" time="0.000722">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: ensure_git_branch" time="0.013867">
+      <testcase classname="fastlane.lanes" name="1: ensure_git_branch" time="0.016389">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: ensure_git_status_clean" time="0.027854">
+      <testcase classname="fastlane.lanes" name="2: ensure_git_status_clean" time="0.01418">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: git_pull" time="1.952489">
+      <testcase classname="fastlane.lanes" name="3: git_pull" time="1.16632">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: Switch to ios build lane" time="0.000319">
+      <testcase classname="fastlane.lanes" name="4: Switch to ios build lane" time="0.00037">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: Switch to ios certificates lane" time="0.00028">
+      <testcase classname="fastlane.lanes" name="5: Switch to ios certificates lane" time="0.000347">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: match" time="0.638471">
+      <testcase classname="fastlane.lanes" name="6: match" time="118.786748">
         
-          <failure message="/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/actions/actions_helper.rb:67:in `execute_action'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:255:in `block in execute_action'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:229:in `chdir'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:229:in `execute_action'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:12:in `block (2 levels) in parsing_binding'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:204:in `try_switch_to_lane'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:146:in `trigger_action_by_name'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:18:in `block (2 levels) in parsing_binding'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:204:in `try_switch_to_lane'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:146:in `trigger_action_by_name'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:25:in `block (2 levels) in parsing_binding'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/lane_manager.rb:47:in `cruise_lane'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/commands_generator.rb:109:in `block (2 levels) in run'&#10;/Users/jmsims2/.gem/gems/commander-4.6.0/lib/commander/command.rb:187:in `call'&#10;/Users/jmsims2/.gem/gems/commander-4.6.0/lib/commander/command.rb:157:in `run'&#10;/Users/jmsims2/.gem/gems/commander-4.6.0/lib/commander/runner.rb:444:in `run_active_command'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:117:in `run!'&#10;/Users/jmsims2/.gem/gems/commander-4.6.0/lib/commander/delegates.rb:18:in `run!'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/commands_generator.rb:353:in `run'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/commands_generator.rb:42:in `start'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/cli_tools_distributor.rb:122:in `take_off'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/jmsims2/.gem/bin/fastlane:25:in `load'&#10;/Users/jmsims2/.gem/bin/fastlane:25:in `&lt;top (required)&gt;'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/cli/exec.rb:58:in `load'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/cli/exec.rb:58:in `kernel_load'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/cli/exec.rb:23:in `run'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/cli.rb:478:in `exec'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/cli.rb:31:in `dispatch'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/cli.rb:25:in `start'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/exe/bundle:49:in `block in &lt;top (required)&gt;'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/friendly_errors.rb:128:in `with_friendly_errors'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/exe/bundle:37:in `&lt;top (required)&gt;'&#10;/usr/bin/bundle:23:in `load'&#10;/usr/bin/bundle:23:in `&lt;main&gt;'&#10;&#10;No code signing identity found and can not create a new one because you enabled `readonly`" />
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="7: match" time="42.120015">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="8: increment_build_number" time="2.870833">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="9: gym" time="25.969364">
+        
+          <failure message="/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/actions/actions_helper.rb:67:in `execute_action'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:255:in `block in execute_action'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:229:in `chdir'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:229:in `execute_action'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:20:in `block (2 levels) in parsing_binding'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:204:in `try_switch_to_lane'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:146:in `trigger_action_by_name'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:25:in `block (2 levels) in parsing_binding'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/lane_manager.rb:47:in `cruise_lane'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/commands_generator.rb:109:in `block (2 levels) in run'&#10;/Users/jmsims2/.gem/gems/commander-4.6.0/lib/commander/command.rb:187:in `call'&#10;/Users/jmsims2/.gem/gems/commander-4.6.0/lib/commander/command.rb:157:in `run'&#10;/Users/jmsims2/.gem/gems/commander-4.6.0/lib/commander/runner.rb:444:in `run_active_command'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:117:in `run!'&#10;/Users/jmsims2/.gem/gems/commander-4.6.0/lib/commander/delegates.rb:18:in `run!'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/commands_generator.rb:353:in `run'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/commands_generator.rb:42:in `start'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/fastlane/lib/fastlane/cli_tools_distributor.rb:122:in `take_off'&#10;/Users/jmsims2/.gem/gems/fastlane-2.197.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/jmsims2/.gem/bin/fastlane:25:in `load'&#10;/Users/jmsims2/.gem/bin/fastlane:25:in `&lt;top (required)&gt;'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/cli/exec.rb:58:in `load'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/cli/exec.rb:58:in `kernel_load'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/cli/exec.rb:23:in `run'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/cli.rb:478:in `exec'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/cli.rb:31:in `dispatch'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/cli.rb:25:in `start'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/exe/bundle:49:in `block in &lt;top (required)&gt;'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/lib/bundler/friendly_errors.rb:128:in `with_friendly_errors'&#10;/Users/jmsims2/.gem/gems/bundler-2.2.29/exe/bundle:37:in `&lt;top (required)&gt;'&#10;/usr/bin/bundle:23:in `load'&#10;/usr/bin/bundle:23:in `&lt;main&gt;'&#10;&#10;Error building the application - see the log above" />
         
       </testcase>
     
