@@ -25,6 +25,6 @@ platform :ios do
         build
         pilot
         commit_version_bump(message: 'Bump build', xcodeproj: './ios/myviroapp.xcodeproj')
-        push_to_git_remote
+        push_to_git_remote(local_branch: 'main', remote_branch: 'main')
   end
 end
