@@ -15,6 +15,20 @@ Install _fastlane_ using
 or alternatively using `brew install fastlane`
 
 # Available Actions
+## iOS
+### ios certificates
+```
+fastlane ios certificates
+```
+Fetch certificates and provisioning profiles
+### ios beta
+```
+fastlane ios beta
+```
+Ship to Testflight.
+
+----
+
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
 More information about fastlane can be found on [fastlane.tools](https://fastlane.tools).
 The documentation of fastlane can be found on [docs.fastlane.tools](https://docs.fastlane.tools).
