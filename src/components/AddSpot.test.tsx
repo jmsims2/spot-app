@@ -1,12 +1,13 @@
 import React from 'react';
 import { AddSpotForm } from '.';
-import { TestProvider } from '../utils/TestProviders';
+import { TestProvider, queryClient } from '../utils/TestProviders';
 import { render, waitFor, fireEvent } from '@testing-library/react-native';
 import BottomSheet from 'reanimated-bottom-sheet';
 import { server, rest, baseErrorHandler, baseResource } from '../mock-api';
 
 beforeEach(() => jest.resetAllMocks());
 
+const queryClientSpy = jest.spyOn(queryClient, 'refetchQueries');
 const mockRef = { current: { snapTo: jest.fn() } };
 const mockPosition = { latitude: 40, longitude: -105 };
 
@@ -27,6 +28,9 @@ describe('AddSpotForm Tests', () => {
     fireEvent.press(getByText('Save'));
 
     await waitFor(() => expect(mockRef.current.snapTo).toHaveBeenCalledWith(1));
+    await waitFor(() =>
+      expect(queryClientSpy).toHaveBeenCalledWith('spot-locations'),
+    );
   });
   it('should handle errors', async () => {
     server.use(
